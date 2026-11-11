@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интересный квиз</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="container">
+        <div id="quiz-container" class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+
+            <div class="question-container" id="question-container">
+                <div class="question-number" id="question-number"></div>
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+            </div>
+
+            <div class="navigation">
+                <button id="next-btn" class="btn btn-primary" style="display: none;">Далее</button>
+            </div>
+        </div>
+
+        <div id="result-container" class="result-container" style="display: none;">
+            <div class="result-content">
+                <h2 id="result-title"></h2>
+                <p id="result-text"></p>
+                <div id="final-message" style="display: none;">
+                    <div class="heart-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
